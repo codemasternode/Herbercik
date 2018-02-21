@@ -84,14 +84,15 @@ nav {
     margin-bottom: 1em; }
 
 .own {
-  text-align: justify;
   margin-top: 1.5em;
   padding-right: 40px; }
+  .own p {
+    text-align: justify; }
   @media screen and (max-width: 750px) {
     .own {
       padding-right: 0; } }
   .own h4 {
-    text-align: center; }
+    text-align: left; }
 
 @media screen and (max-width: 1000px) {
   p {
@@ -125,3 +126,20 @@ nav {
   background: white;
   padding-top: 2em;
   padding-bottom: 4em; }
+
+.des {
+  background: #0094c9;
+  color: white;
+  -webkit-box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7); }
+
+.cv-text {
+  padding: 6em 2em;
+  text-align: justify;
+  line-height: 1.6; }
+  .cv-text h4 {
+    margin-top: 20px; }
+  .cv-text h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px; }
