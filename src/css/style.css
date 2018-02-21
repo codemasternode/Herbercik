@@ -57,6 +57,10 @@ nav {
   @media screen and (max-width: 1000px) {
     .cv {
       line-height: 1.4; } }
+  @media screen and (max-width: 512px) {
+    .cv {
+      padding-right: 22vh;
+      padding-left: 0; } }
 
 .button {
   padding: 1em;
@@ -77,22 +81,28 @@ nav {
   padding-top: 6em;
   padding-bottom: 7em;
   color: #0094c9; }
+  .creating a {
+    color: white; }
   .creating h2 {
     color: #025d7d;
     text-align: center;
     display: block;
     margin-bottom: 1em; }
+  @media screen and (max-width: 512px) {
+    .creating {
+      padding-left: 0em;
+      padding-right: 20vh; } }
 
 .own {
   margin-top: 1.5em;
   padding-right: 40px; }
   .own p {
-    text-align: justify; }
+    text-align: center; }
   @media screen and (max-width: 750px) {
     .own {
       padding-right: 0; } }
   .own h4 {
-    text-align: left; }
+    text-align: center; }
 
 @media screen and (max-width: 1000px) {
   p {
@@ -120,6 +130,10 @@ nav {
     width: 100%;
     text-align: center;
     margin-bottom: -10px; }
+  .achive a {
+    width: 400px;
+    text-align: center;
+    color: white; }
 
 .custom-footer {
   color: #0094c9;
@@ -132,14 +146,66 @@ nav {
   color: white;
   -webkit-box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7);
   box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7); }
+  .des .row {
+    margin-top: 2em; }
 
 .cv-text {
   padding: 6em 2em;
   text-align: justify;
-  line-height: 1.6; }
+  line-height: 1.6;
+  -webkit-box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7); }
   .cv-text h4 {
     margin-top: 20px; }
   .cv-text h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 40px; }
+  @media screen and (max-width: 512px) {
+    .cv-text {
+      padding-right: 12em; }
+      .cv-text p {
+        font-size: 14px !important; } }
+
+.cv-des {
+  padding: 5em 1em;
+  min-height: 400px;
+  -webkit-box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7); }
+  .cv-des h2 {
+    color: white;
+    text-align: center;
+    background: #0094c9; }
+  .cv-des a {
+    color: white;
+    width: 200px; }
+
+.cv-img {
+  height: auto; }
+  .cv-img img {
+    width: 80%;
+    display: block; }
+  @media screen and (max-width: 512px) {
+    .cv-img img {
+      width: 60%; } }
+
+.header-crt {
+  width: 100%;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+  background: white;
+  color: #0094c9;
+  text-align: center; }
+  @media screen and (max-width: 512px) {
+    .header-crt {
+      text-align: left;
+      padding-left: 3em; } }
+
+.odst {
+  width: 100%;
+  height: 50px;
+  background: #0094c9;
+  -webkit-box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7); }

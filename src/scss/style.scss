@@ -9,6 +9,8 @@ $third-color: rgb(2,93,125);
 }
 
 
+
+
 nav {
     background: $secondary-color;
     position: relative;
@@ -73,6 +75,10 @@ nav {
     @media screen and (max-width: 1000px){
         line-height: 1.4;
     }
+    @media screen and (max-width: 512px){
+        padding-right: 22vh;
+        padding-left: 0;
+    }
 }
 .button {
     padding: 1em;
@@ -96,7 +102,11 @@ nav {
     padding: 2em;
     padding-top: 6em;
     padding-bottom: 7em;
+    
     color: $primary-color;
+    a{
+        color: $secondary-color;
+    }
     
     h2{
         color: $third-color;
@@ -104,11 +114,15 @@ nav {
         display: block;
         margin-bottom: 1em;
     }
+    @media screen and (max-width: 512px){
+        padding-left: 0em;
+        padding-right: 20vh;
+    }
     
 }
 .own {
     p{
-        text-align: justify;
+        text-align: center;
     }
     margin-top: 1.5em;
     padding-right: 40px;
@@ -116,7 +130,7 @@ nav {
         padding-right: 0;
     }
     h4 {
-        text-align: left;
+        text-align: center;
     }
 }
 @media screen and (max-width: 1000px){
@@ -149,6 +163,11 @@ nav {
         text-align: center;
         margin-bottom: -10px;
     }
+    a{
+        width: 400px;
+        text-align: center;
+        color: $secondary-color;
+    }
 }
 
 .custom-footer {
@@ -161,11 +180,15 @@ nav {
     background: $primary-color;
     color: $secondary-color;
     box-shadow: inset 0px 0px 14px 1px rgba(52,0,0,0.70);
+    .row {
+        margin-top: 2em;
+    }
 }
 .cv-text {
     padding: 6em 2em;
     text-align: justify;
     line-height: 1.6;
+    box-shadow: inset 0px 0px 14px 1px rgba(52,0,0,0.70);
     h4 {
         margin-top: 20px;
     }
@@ -174,4 +197,60 @@ nav {
         text-align: center;
         margin-bottom: 40px;
     }
+    @media screen and (max-width: 512px){
+        p{
+            font-size: 14px !important;
+        }
+        padding-right: 12em;
+    }
+}
+
+.cv-des {
+    padding: 5em 1em;
+    min-height: 400px;  
+    box-shadow: inset 0px 0px 14px 1px rgba(52,0,0,0.70);
+    h2{
+        color: $secondary-color;
+        text-align: center;
+        background: $primary-color;
+    }
+    a{
+        color: $secondary-color;
+        width: 200px;
+    }
+}
+
+.cv-img {
+    height: auto;
+    img {
+        width: 80%;
+        display: block;
+    }
+    @media screen and (max-width: 512px){
+        img {
+            width: 60%;
+        }
+    }
+}
+
+
+.header-crt{
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    background: $secondary-color;
+    color: $primary-color;
+    text-align: center;
+    @media screen and (max-width: 512px){
+        text-align: left;
+        padding-left: 3em;
+    }
+}
+.odst {
+    width: 100%;
+    height: 50px;
+    background: $primary-color;
+    box-shadow: inset 0px 0px 14px 1px rgba(52,0,0,0.70);
 }
