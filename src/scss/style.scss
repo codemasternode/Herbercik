@@ -8,6 +8,12 @@ $third-color: rgb(2,93,125);
     font-family: Arial, Helvetica, sans-serif !important;
 }
 
+@media screen and (max-width: 512px) {
+    p {
+        font-size: 14px !important;
+    }
+}
+
 
 
 
@@ -35,7 +41,15 @@ nav {
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
     }
-    @media screen and (max-width: 997px){
+    @media screen and (max-width: 512px){
+        h1{
+            width: 100%;
+            font-size: 28px !important;
+            font-weight: bold;
+        }
+    }
+
+    @media screen and (min-width: 512px) and (max-width: 997px){
         h1{
             width: 100%;
             font-size: 31px !important;
@@ -76,8 +90,7 @@ nav {
         line-height: 1.4;
     }
     @media screen and (max-width: 512px){
-        padding-right: 22vh;
-        padding-left: 0;
+        padding: 10px;
     }
 }
 .button {
@@ -115,8 +128,7 @@ nav {
         margin-bottom: 1em;
     }
     @media screen and (max-width: 512px){
-        padding-left: 0em;
-        padding-right: 20vh;
+        padding: 20px;
     }
     
 }
@@ -133,16 +145,12 @@ nav {
         text-align: center;
     }
 }
-@media screen and (max-width: 1000px){
-    p {
-        font-size: 16px !important;
-    }
-}
 
 .btn-custom {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    
     margin-top: 30px;
     padding: 0.5em 1.5em;
     background: $special-color;
@@ -151,11 +159,22 @@ nav {
     }
 }
 
+.btn-custom2 {
+    padding: 10px 1em;
+    text-align: center;
+    background: $special-color;
+    margin-top: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
 .achive {
     background: $primary-color;
     color: $secondary-color !important;
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+    padding-top: 4em;
+    padding-bottom: 4em;
     box-shadow: inset 0px 0px 14px 1px rgba(52,0,0,0.70);
     h2 {
         display: block;
@@ -164,7 +183,6 @@ nav {
         margin-bottom: -10px;
     }
     a{
-        width: 400px;
         text-align: center;
         color: $secondary-color;
     }
@@ -201,12 +219,12 @@ nav {
         p{
             font-size: 14px !important;
         }
-        padding-right: 12em;
+        padding: 20px;
     }
 }
 
 .cv-des {
-    padding: 5em 1em;
+    padding: 7em 1em;
     min-height: 400px;  
     box-shadow: inset 0px 0px 14px 1px rgba(52,0,0,0.70);
     h2{
@@ -218,17 +236,19 @@ nav {
         color: $secondary-color;
         width: 200px;
     }
+
+    
+
 }
 .cv-img {
     height: auto;
     img {
-        width: 80%;
+        width: 100%;
+        max-width: 450px;
         display: block;
     }
-    @media screen and (max-width: 512px){
-        img {
-            width: 60%;
-        }
+    @media screen and (max-width: 750px) {
+        margin-bottom: 10vh;
     }
 }
 .header-crt{
@@ -241,8 +261,8 @@ nav {
     color: $primary-color;
     text-align: center;
     @media screen and (max-width: 512px){
-        text-align: left;
-        padding-left: 3em;
+        text-align: center;
+        padding: 20px;
     }
 }
 .odst {
@@ -259,5 +279,8 @@ nav {
 .l {
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-right: 3em;
+    padding: 2em;
+    @media screen and (max-width: 512px) {
+        padding: 20px;
+    }
 }

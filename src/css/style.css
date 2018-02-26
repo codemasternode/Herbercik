@@ -2,6 +2,10 @@
   font-variant: small-caps !important;
   font-family: Arial, Helvetica, sans-serif !important; }
 
+@media screen and (max-width: 512px) {
+  p {
+    font-size: 14px !important; } }
+
 nav {
   background: white;
   position: relative;
@@ -22,7 +26,12 @@ nav {
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold; }
-  @media screen and (max-width: 997px) {
+  @media screen and (max-width: 512px) {
+    nav h1 {
+      width: 100%;
+      font-size: 28px !important;
+      font-weight: bold; } }
+  @media screen and (min-width: 512px) and (max-width: 997px) {
     nav h1 {
       width: 100%;
       font-size: 31px !important;
@@ -59,8 +68,7 @@ nav {
       line-height: 1.4; } }
   @media screen and (max-width: 512px) {
     .cv {
-      padding-right: 22vh;
-      padding-left: 0; } }
+      padding: 10px; } }
 
 .button {
   padding: 1em;
@@ -90,8 +98,7 @@ nav {
     margin-bottom: 1em; }
   @media screen and (max-width: 512px) {
     .creating {
-      padding-left: 0em;
-      padding-right: 20vh; } }
+      padding: 20px; } }
 
 .own {
   margin-top: 1.5em;
@@ -104,10 +111,6 @@ nav {
   .own h4 {
     text-align: center; }
 
-@media screen and (max-width: 1000px) {
-  p {
-    font-size: 16px !important; } }
-
 .btn-custom {
   margin-left: auto;
   margin-right: auto;
@@ -118,11 +121,21 @@ nav {
   .btn-custom a {
     color: white; }
 
+.btn-custom2 {
+  padding: 10px 1em;
+  text-align: center;
+  background: #13bf20;
+  margin-top: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px; }
+
 .achive {
   background: #0094c9;
   color: white !important;
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
+  padding-top: 4em;
+  padding-bottom: 4em;
   -webkit-box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7);
   box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7); }
   .achive h2 {
@@ -131,7 +144,6 @@ nav {
     text-align: center;
     margin-bottom: -10px; }
   .achive a {
-    width: 400px;
     text-align: center;
     color: white; }
 
@@ -163,12 +175,12 @@ nav {
     margin-bottom: 40px; }
   @media screen and (max-width: 512px) {
     .cv-text {
-      padding-right: 12em; }
+      padding: 20px; }
       .cv-text p {
         font-size: 14px !important; } }
 
 .cv-des {
-  padding: 5em 1em;
+  padding: 7em 1em;
   min-height: 400px;
   -webkit-box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7);
   box-shadow: inset 0px 0px 14px 1px rgba(52, 0, 0, 0.7); }
@@ -183,11 +195,12 @@ nav {
 .cv-img {
   height: auto; }
   .cv-img img {
-    width: 80%;
+    width: 100%;
+    max-width: 450px;
     display: block; }
-  @media screen and (max-width: 512px) {
-    .cv-img img {
-      width: 60%; } }
+  @media screen and (max-width: 750px) {
+    .cv-img {
+      margin-bottom: 10vh; } }
 
 .header-crt {
   width: 100%;
@@ -200,8 +213,8 @@ nav {
   text-align: center; }
   @media screen and (max-width: 512px) {
     .header-crt {
-      text-align: left;
-      padding-left: 3em; } }
+      text-align: center;
+      padding: 20px; } }
 
 .odst {
   width: 100%;
@@ -217,4 +230,7 @@ nav {
 .l {
   padding-top: 1em;
   padding-bottom: 1em;
-  padding-right: 3em; }
+  padding: 2em; }
+  @media screen and (max-width: 512px) {
+    .l {
+      padding: 20px; } }
