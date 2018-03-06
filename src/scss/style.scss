@@ -22,6 +22,11 @@ nav {
     position: relative;
     z-index: 2;
     border-bottom: 1px solid $third-color;
+    @media screen and (max-width: 1060px) {
+        .nav-link {
+            display: none;
+        }
+    }
     h1{
         font-size: 40px !important;
         text-align: center;
@@ -49,7 +54,7 @@ nav {
         }
     }
 
-    @media screen and (min-width: 512px) and (max-width: 997px){
+    @media screen and (min-width: 512px) and (max-width: 1060px){
         h1{
             width: 100%;
             font-size: 31px !important;
@@ -287,3 +292,4 @@ nav {
         padding: 20px;
     }
 }
+
